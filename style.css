@@ -121,18 +121,21 @@ h1 {
 .middleContainer {
   background-color: var(--ghostWhite);
   padding-top: 200px;
+  border-radius: 0% 0% 100% 100% / 20% 20% 20% 20%;
+
 }
 
 .boxes {
   display: flex;
-  margin: 0 auto;
+justify-content: center;
   flex-direction: row;
-  height: 308px;
+
 }
 
 .box1, .box2, .box3 {
   text-align: center;
   padding: 40px;
+
 }
 
 .numbers {
@@ -151,15 +154,32 @@ h1 {
            Bottom Section
 ***********************************/
 .ownerContainer {
-  padding-top: 200px;
+  padding: 50px 75px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.ownerPhoto {
+
+}
+
+.ownerPhoto > img {
+  width: 300px;
+  height: 300px;
+}
+
+.ownerText {
+  background-color: var(--darkPuple);
+  width: 400px;
+  position: absolute;
+  left: 54%;
+  top: 40%;
+
 }
 
 @media (max-width: 600px) {
-  .boxes {
-    flex-direction: column;
-    width: 375px;
-    height: 1070px;
-  }
+
 
 }
 
